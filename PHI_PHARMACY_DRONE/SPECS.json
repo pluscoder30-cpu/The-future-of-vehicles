@@ -1,0 +1,114 @@
+{
+  "model": "PPHD-300",
+  "name": "PHI Pharmacy Drone",
+  "version": "1.0",
+  "manufacturer": "PHI Aerospace Medical Systems",
+  "category": "Pharmaceutical Delivery UAV",
+  "price_usd": 400,
+  "physical": {
+    "frame_type": "Quadcopter",
+    "frame_material": "Carbon Fiber Composite",
+    "dimensions_m": [0.8, 0.8, 0.4],
+    "weight_kg": 6,
+    "max_payload_kg": 3,
+    "ip_rating": "IP54"
+  },
+  "propulsion": {
+    "motor_count": 4,
+    "motor_model": "T-Motor F40 Pro II",
+    "motor_power_w": 750,
+    "total_power_kw": 3,
+    "propeller_size_inches": 10,
+    "propeller_material": "Carbon Fiber"
+  },
+  "battery": {
+    "model": "FPB-5",
+    "chemistry": "Lithium-Polymer",
+    "capacity_kwh": 5,
+    "voltage_nominal_v": 25.6,
+    "weight_kg": 10,
+    "max_range_loaded_km": 40,
+    "cruise_speed_kmh": 60,
+    "runtime_min": 120
+  },
+  "performance": {
+    "max_speed_kmh": 80,
+    "cruise_speed_kmh": 60,
+    "max_altitude_m_agl": 120,
+    "max_wind_kmh": 40,
+    "operating_temp_min_c": -5,
+    "operating_temp_max_c": 40
+  },
+  "medication_storage": {
+    "total_slots": 20,
+    "refrigerated_slots": 14,
+    "ambient_slots": 6,
+    "refrigerated_range_c": [2, 8],
+    "ambient_range_c": [15, 25],
+    "temperature_accuracy_c": 0.5,
+    "rfid_per_slot": true,
+    "barcode_scanner": true,
+    "expiry_monitoring": true,
+    "temperature_logging": true
+  },
+  "temperature_control": {
+    "refrigerated_method": "Peltier + Fan",
+    "refrigerated_power_w": 120,
+    "ambient_method": "Insulation + Heater",
+    "ambient_power_w": 20,
+    "insulation_thickness_mm": 25,
+    "sensor_count": 6,
+    "control_loop": "PID",
+    "logging_rate_hz": 1
+  },
+  "dispensing": {
+    "arm_dof": 4,
+    "arm_reach_cm": 30,
+    "arm_payload_g": 500,
+    "gripper_type": "2-finger parallel",
+    "barcode_verify": true,
+    "photo_confirm": true,
+    "dispense_time_s": 10,
+    "chain_of_custody": true
+  },
+  "dosage_calculator": {
+    "weight_based": true,
+    "age_adjustment": true,
+    "renal_adjustment": true,
+    "hepatic_adjustment": true,
+    "allergy_check": true,
+    "interaction_check": true,
+    "max_dose_verify": true,
+    "pharmacist_approval": true
+  },
+  "phi_harmonic": {
+    "phi_value": 1.6180339887,
+    "absorption_frequencies_hz": [16.18, 26.18, 42.36, 68.54],
+    "field_strength_mt": 0.2,
+    "emitter_count": 2,
+    "optional": true,
+    "patient_consent_required": true
+  },
+  "navigation": {
+    "primary": "GPS/GNSS RTK",
+    "rtk_accuracy_cm": 2,
+    "secondary": "Visual SLAM",
+    "obstacle_avoidance": "LiDAR + Cameras",
+    "weather_aware": true,
+    "autonomous_level": 4
+  },
+  "safety": {
+    "redundant_controllers": 2,
+    "parachute": true,
+    "tamper_evident": true,
+    "controlled_substance_security": true,
+    "emergency_return": true
+  },
+  "regulatory": {
+    "fda_21cfr211": true,
+    "usp_797_800": true,
+    "dea_scheduled": true,
+    "state_pharmacy_license": true,
+    "hipaa": true
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "drone_model": "PMSD-100",
+  "total_cost_usd": 800,
+  "components": [
+    {
+      "id": "frame-001",
+      "name": "Carbon Fiber Octocopter Frame",
+      "category": "Structure",
+      "specification": "2.2m diagonal, 25kg, crash-rated",
+      "quantity": 1,
+      "unit_cost_usd": 40,
+      "total_cost_usd": 40,
+      "supplier": "DJI Enterprise",
+      "lead_time_days": 14
+    },
+    {
+      "id": "motor-001",
+      "name": "T-Motor U15L Motor",
+      "category": "Propulsion",
+      "specification": "15kW, 120KV, 88mm diameter",
+      "quantity": 8,
+      "unit_cost_usd": 12,
+      "total_cost_usd": 96,
+      "supplier": "T-Motor",
+      "lead_time_days": 21
+    },
+    {
+      "id": "prop-001",
+      "name": "Carbon Fiber Propeller",
+      "category": "Propulsion",
+      "specification": "28-inch, folding, carbon fiber",
+      "quantity": 8,
+      "unit_cost_usd": 4,
+      "total_cost_usd": 32,
+      "supplier": "T-Motor",
+      "lead_time_days": 14
+    },
+    {
+      "id": "esc-001",
+      "name": "FLAME 180A ESC",
+      "category": "Propulsion",
+      "specification": "180A, 6S-12S, BLHeli_32",
+      "quantity": 8,
+      "unit_cost_usd": 2,
+      "total_cost_usd": 16,
+      "supplier": "T-Motor",
+      "lead_time_days": 14
+    },
+    {
+      "id": "battery-001",
+      "name": "FPB-20 Battery Pack",
+      "category": "Power",
+      "specification": "20kWh, 51.2V, 40kg, 4C discharge",
+      "quantity": 1,
+      "unit_cost_usd": 80,
+      "total_cost_usd": 80,
+      "supplier": "PHI Energy Systems",
+      "lead_time_days": 30
+    },
+    {
+      "id": "bms-001",
+      "name": "Battery Management System",
+      "category": "Power",
+      "specification": "Dual redundant, cell balancing",
+      "quantity": 2,
+      "unit_cost_usd": 8,
+      "total_cost_usd": 16,
+      "supplier": "PHI Energy Systems",
+      "lead_time_days": 21
+    },
+    {
+      "id": "fc-001",
+      "name": "Pixhawk 6X Flight Controller",
+      "category": "Avionics",
+      "specification": "Triple IMU, dual barometer",
+      "quantity": 1,
+      "unit_cost_usd": 20,
+      "total_cost_usd": 20,
+      "supplier": "Holybro",
+      "lead_time_days": 14
+    },
+    {
+      "id": "fc-002",
+      "name": "Cube Orange+ (Backup)",
+      "category": "Avionics",
+      "specification": "Triple IMU, redundant flight ctrl",
+      "quantity": 1,
+      "unit_cost_usd": 15,
+      "total_cost_usd": 15,
+      "supplier": "CubePilot",
+      "lead_time_days": 14
+    },
+    {
+      "id": "lidar-001",
+      "name": "Livox Mid-360 LiDAR",
+      "category": "Sensors",
+      "specification": "360-degree, 40m range, 320k pts/s",
+      "quantity": 1,
+      "unit_cost_usd": 12,
+      "total_cost_usd": 12,
+      "supplier": "Livox",
+      "lead_time_days": 21
+    },
+    {
+      "id": "camera-001",
+      "name": "4K Medical Camera",
+      "category": "Sensors",
+      "specification": "4K30, 120-degree FOV, IR capable",
+      "quantity": 4,
+      "unit_cost_usd": 3,
+      "total_cost_usd": 12,
+      "supplier": "FLIR",
+      "lead_time_days": 14
+    },
+    {
+      "id": "gps-001",
+      "name": "RTK GPS Module",
+      "category": "Navigation",
+      "specification": "Centimeter accuracy, dual-band",
+      "quantity": 2,
+      "unit_cost_usd": 5,
+      "total_cost_usd": 10,
+      "supplier": "u-blox",
+      "lead_time_days": 14
+    },
+    {
+      "id": "comms-001",
+      "name": "4G/5G LTE Modem",
+      "category": "Communication",
+      "specification": "50Mbps down, 10Mbps up",
+      "quantity": 1,
+      "unit_cost_usd": 8,
+      "total_cost_usd": 8,
+      "supplier": "Sierra Wireless",
+      "lead_time_days": 14
+    },
+    {
+      "id": "comms-002",
+      "name": "900 MHz Mesh Radio",
+      "category": "Communication",
+      "specification": "1W, 10km range, mesh capable",
+      "quantity": 1,
+      "unit_cost_usd": 5,
+      "total_cost_usd": 5,
+      "supplier": "RFD900x",
+      "lead_time_days": 14
+    },
+    {
+      "id": "med-001",
+      "name": "Medical Monitor Array",
+      "category": "Medical",
+      "specification": "ECG, SpO2, NIBP, Temp, Resp, EtCO2",
+      "quantity": 1,
+      "unit_cost_usd": 50,
+      "total_cost_usd": 50,
+      "supplier": "PHI Medical Systems",
+      "lead_time_days": 30
+    },
+    {
+      "id": "med-002",
+      "name": "Life Support Module",
+      "category": "Medical",
+      "specification": "O2, AED, IV, Medications, Trauma",
+      "quantity": 1,
+      "unit_cost_usd": 40,
+      "total_cost_usd": 40,
+      "supplier": "PHI Medical Systems",
+      "lead_time_days": 30
+    },
+    {
+      "id": "phi-001",
+      "name": "Phi-Harmonic Emitter Array",
+      "category": "Healing",
+      "specification": "8x coil emitters, 16.18Hz primary",
+      "quantity": 1,
+      "unit_cost_usd": 30,
+      "total_cost_usd": 30,
+      "supplier": "PHI Research Labs",
+      "lead_time_days": 45
+    },
+    {
+      "id": "winch-001",
+      "name": "Hydraulic Patient Winch",
+      "category": "Mechanical",
+      "specification": "150kg capacity, 10m cable",
+      "quantity": 1,
+      "unit_cost_usd": 15,
+      "total_cost_usd": 15,
+      "supplier": "PHI Aerospace",
+      "lead_time_days": 30
+    },
+    {
+      "id": "harness-001",
+      "name": "Trauma-Rated Patient Harness",
+      "category": "Mechanical",
+      "specification": "5-point, MIL-STD, quick-release",
+      "quantity": 1,
+      "unit_cost_usd": 8,
+      "total_cost_usd": 8,
+      "supplier": "PHI Aerospace",
+      "lead_time_days": 14
+    },
+    {
+      "id": "safety-001",
+      "name": "Parachute Recovery System",
+      "category": "Safety",
+      "specification": "15m diameter, ballistic deploy",
+      "quantity": 1,
+      "unit_cost_usd": 5,
+      "total_cost_usd": 5,
+      "supplier": "Mars Parachutes",
+      "lead_time_days": 21
+    },
+    {
+      "id": "wiring-001",
+      "name": "Wiring Harness & Connectors",
+      "category": "Electrical",
+      "specification": "MIL-STD connectors, shielded",
+      "quantity": 1,
+      "unit_cost_usd": 12,
+      "total_cost_usd": 12,
+      "supplier": "PHI Systems",
+      "lead_time_days": 14
+    }
+  ],
+  "assembly": {
+    "labor_hours": 16,
+    "labor_rate_usd_per_hour": 2,
+    "labor_cost_usd": 32,
+    "testing_hours": 4,
+    "testing_cost_usd": 8,
+    "quality_assurance": true,
+    "qa_cost_usd": 8,
+    "total_assembly_cost_usd": 48
+  },
+  "total_breakdown": {
+    "propulsion_usd": 144,
+    "power_usd": 96,
+    "avionics_usd": 35,
+    "sensors_usd": 22,
+    "navigation_usd": 10,
+    "communication_usd": 13,
+    "medical_usd": 90,
+    "healing_usd": 30,
+    "mechanical_usd": 23,
+    "safety_usd": 5,
+    "electrical_usd": 12,
+    "structure_usd": 40,
+    "assembly_usd": 48,
+    "total_usd": 800
+  }
+}

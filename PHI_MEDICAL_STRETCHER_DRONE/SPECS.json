@@ -1,0 +1,132 @@
+{
+  "model": "PMSD-100",
+  "name": "PHI Medical Stretcher Drone",
+  "version": "2.0",
+  "manufacturer": "PHI Aerospace Medical Systems",
+  "category": "Medical Evacuation UAV",
+  "price_usd": 800,
+  "physical": {
+    "frame_type": "Octocopter",
+    "frame_material": "Carbon Fiber Composite",
+    "dimensions_m": [2.2, 2.2, 0.8],
+    "folded_dimensions_m": [1.2, 1.2, 0.5],
+    "frame_weight_kg": 25,
+    "max_takeoff_weight_kg": 165,
+    "empty_weight_kg": 65,
+    "max_payload_kg": 120,
+    "typical_patient_weight_kg": 100
+  },
+  "propulsion": {
+    "motor_count": 8,
+    "motor_model": "T-Motor U15L",
+    "motor_power_kw": 15,
+    "total_power_kw": 120,
+    "cruise_power_kw": 45,
+    "propeller_size_inches": 28,
+    "propeller_material": "Carbon Fiber",
+    "max_efficiency_percent": 85
+  },
+  "battery": {
+    "model": "FPB-20",
+    "chemistry": "Lithium-Polymer",
+    "capacity_kwh": 20,
+    "voltage_nominal_v": 51.2,
+    "max_discharge_c": 4,
+    "max_power_kw": 80,
+    "weight_kg": 40,
+    "cycle_life": 500,
+    "charge_time_hours": 2.5,
+    "hot_swappable": false
+  },
+  "performance": {
+    "max_speed_kmh": 120,
+    "cruise_speed_kmh": 80,
+    "max_range_loaded_km": 80,
+    "max_range_empty_km": 150,
+    "max_flight_time_min": 60,
+    "max_altitude_m_agl": 120,
+    "climb_rate_ms": 5,
+    "max_wind_kmh": 50,
+    "operating_temp_min_c": -10,
+    "operating_temp_max_c": 45,
+    "ip_rating": "IP67"
+  },
+  "medical": {
+    "patient_platform": "Hydraulic Extraction Stretcher",
+    "harness_type": "5-Point Trauma-Rated",
+    "monitoring": {
+      "ecg": true,
+      "spo2": true,
+      "nibp": true,
+      "temperature": true,
+      "respiration": true,
+      "etco2": true
+    },
+    "life_support": {
+      "oxygen_supply_liters": 2,
+      "oxygen_duration_min": 30,
+      "aed": true,
+      "iv_mounts": 2,
+      "medications": ["Epinephrine", "Atropine", "Amiodarone", "Naloxone"],
+      "trauma_kit": true
+    },
+    "vibration_at_patient_g": 0.5,
+    "noise_at_patient_db": 65,
+    "temperature_controlled": true,
+    "temp_range_c": [20, 24]
+  },
+  "phi_harmonic": {
+    "phi_value": 1.6180339887,
+    "primary_frequency_hz": 16.18,
+    "healing_harmonics_hz": [16.18, 26.18, 42.36, 68.54],
+    "field_strength_mt": 0.5,
+    "emitter_count": 8,
+    "coverage": "360-degree uniform",
+    "emergency_mode": true,
+    "emergency_frequency_hz": 26.18,
+    "ai_adaptive": true
+  },
+  "navigation": {
+    "primary": "GPS/GNSS RTK",
+    "rtk_accuracy_cm": 2,
+    "secondary": "Visual SLAM",
+    "tertiary": "IMU + Barometric",
+    "obstacle_avoidance": "360-degree LiDAR + 4x Cameras",
+    "weather_radar": true,
+    "ai_pilot": "Deep Reinforcement Learning",
+    "autonomous_level": "Level 4"
+  },
+  "flight_controller": {
+    "primary": "Pixhawk 6X",
+    "secondary": "Cube Orange+",
+    "imu_redundancy": 3,
+    "barometer_redundancy": 2,
+    "safety_processor": "Independent"
+  },
+  "communication": {
+    "primary": "4G/5G LTE",
+    "secondary": "900 MHz Mesh",
+    "tertiary": "Satellite (Iridium)",
+    "video_quality": "4K",
+    "audio": "2-way",
+    "encryption": "AES-256",
+    "latency_ms": 50
+  },
+  "safety": {
+    "redundant_rotors": 2,
+    "motor_loss_tolerant": 2,
+    "dual_bms": true,
+    "parachute_system": true,
+    "parachute_altitude_m": 30,
+    "negative_g_limit": -0.5,
+    "lightning_protection": true,
+    "faraday_cage": true
+  },
+  "regulatory": {
+    "faa_part_107": true,
+    "medical_exemption": true,
+    "hipaa_compliant": true,
+    "fda_class": "II",
+    "ems_certified": true
+  }
+}
