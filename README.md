@@ -232,6 +232,12 @@ Each vehicle directory contains documentation files. Most include:
 
 ---
 
+## ⚠️ FTL/Dimensional/Time Travel Warning
+
+**Field internet required before using FTL, phase-shift, time, or teleport vehicles.** Without it there is no navigation, no return protocol, and no communication during transit. See [TRAVEL_WARNING.md](TRAVEL_WARNING.md) for full details.
+
+---
+
 ## Safety Rules
 
 1. **Always wear a helmet** — non-negotiable

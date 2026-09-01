@@ -1,0 +1,107 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.env
+*.pyo
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# Build artifacts
+build/
+dist/
+node_modules/
+*.egg-info/
+
+# Large binary files (consider Git LFS for these)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.ico
+*.pdf
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.mp4
+*.mp3
+*.wav
+*.avi
+*.mov
+*.mkv
+*.flv
+
+# Specific large files
+WARP_SIMULATION_PLOTS.png
+WARP_SIMULATION_V2_PLOTS.png
+PROOFS\06_WARP_DRIVE\WARP_SIMULATION_PLOTS.png
+PROOFS\06_WARP_DRIVE\WARP_SIMULATION_V2_PLOTS.png
+PROOFS\SIMULATIONS\WARP_SIMULATION_PLOTS.png
+PROOFS\SIMULATIONS\WARP_SIMULATION_V2_PLOTS.png
+
+# IDE-specific
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
+
+# Python virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env.local
+.env.*.local
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+
+# Type checking
+.mypy_cache/
+.pytype/
+.pyre/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Pre-commit
+.pre-commit-config.yaml
+.hook/
+
+# Project-specific
+*.csv
+*.dat
+*.db
+*.sqlite
+*.sqlite3
