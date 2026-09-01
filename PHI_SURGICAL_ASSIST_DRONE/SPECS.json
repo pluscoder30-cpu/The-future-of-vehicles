@@ -1,0 +1,95 @@
+{
+  "model": "PSAD-200",
+  "name": "PHI Surgical Assist Drone",
+  "version": "1.0",
+  "manufacturer": "PHI Aerospace Medical Systems",
+  "category": "Surgical Assistance UAV",
+  "price_usd": 600,
+  "physical": {
+    "frame_type": "Quadcopter (enclosed)",
+    "frame_material": "Medical-grade Aluminum + Titanium",
+    "dimensions_m": [0.6, 0.6, 0.4],
+    "weight_kg": 8,
+    "max_payload_kg": 5,
+    "enclosed_rotors": true
+  },
+  "propulsion": {
+    "motor_count": 4,
+    "motor_model": "T-Motor F80 Pro",
+    "motor_power_w": 500,
+    "total_power_kw": 2,
+    "propeller_size_inches": 8,
+    "propeller_enclosed": true,
+    "noise_level_db": 45
+  },
+  "battery": {
+    "model": "FPB-5",
+    "chemistry": "Lithium-Polymer",
+    "capacity_kwh": 5,
+    "voltage_nominal_v": 25.6,
+    "weight_kg": 10,
+    "runtime_hours": 4,
+    "inductive_charging": true
+  },
+  "performance": {
+    "max_speed_ms": 5,
+    "positioning_accuracy_mm": 0.1,
+    "angular_accuracy_deg": 0.1,
+    "force_control_range_n": [0.1, 50],
+    "ceiling_height_m": [2.5, 4.0]
+  },
+  "robotic_arm": {
+    "dof": 6,
+    "reach_m": 0.5,
+    "payload_kg": 5,
+    "accuracy_mm": 0.1,
+    "force_feedback": true,
+    "instrument_slots": 6,
+    "swap_time_s": 2,
+    "instruments": ["Scalpel", "Forceps", "Retractor", "Suction", "Cautery", "Scissors"]
+  },
+  "sterile_field": {
+    "uv_c_wavelength_nm": 254,
+    "uv_c_intensity_mw_cm2": 40,
+    "ionization_density": "1e6 ions/cm3",
+    "sterility_assurance": "10^-6 SAL",
+    "auto_sterilize": true,
+    "hepa_filtered": true
+  },
+  "phi_harmonic": {
+    "phi_value": 1.6180339887,
+    "healing_frequencies_hz": [16.18, 26.18, 42.36, 68.54],
+    "field_strength_mt": 0.3,
+    "coverage_radius_cm": 30,
+    "penetration_depth_cm": 5,
+    "emitter_count": 4,
+    "adaptive_control": true
+  },
+  "navigation": {
+    "primary": "Visual Servoing (Stereo Cameras)",
+    "secondary": "Electromagnetic Tracking",
+    "tertiary": "Inertial Measurement",
+    "camera_resolution": "1080p stereo",
+    "tracking_frequency_hz": 100
+  },
+  "control_interface": {
+    "voice_commands": true,
+    "gesture_control": true,
+    "foot_pedal": true,
+    "console_integration": true,
+    "latency_ms": 10
+  },
+  "safety": {
+    "redundant_controllers": 2,
+    "mechanical_arm_brake": true,
+    "collision_detection": true,
+    "force_limiting_n": 50,
+    "emergency_dock": true
+  },
+  "regulatory": {
+    "fda_class": "II",
+    "iec_60601_1": true,
+    "iso_13485": true,
+    "ce_mark": true
+  }
+}

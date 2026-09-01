@@ -1,0 +1,41 @@
+{
+  "drone_model": "PSAD-200",
+  "total_cost_usd": 600,
+  "components": [
+    {"id": "frame-001", "name": "Medical-grade Aluminum Frame", "category": "Structure", "specification": "Anodized Al + Ti, enclosed rotors", "quantity": 1, "unit_cost_usd": 25, "total_cost_usd": 25, "supplier": "PHI Medical"},
+    {"id": "shroud-001", "name": "Rotor Enclosure Shrouds", "category": "Structure", "specification": "4x HEPA-filtered enclosed shrouds", "quantity": 4, "unit_cost_usd": 5, "total_cost_usd": 20, "supplier": "PHI Medical"},
+    {"id": "motor-001", "name": "T-Motor F80 Pro", "category": "Propulsion", "specification": "500W, quiet operation, medical grade", "quantity": 4, "unit_cost_usd": 12, "total_cost_usd": 48, "supplier": "T-Motor"},
+    {"id": "prop-001", "name": "8-inch Enclosed Propeller", "category": "Propulsion", "specification": "Carbon fiber, shrouded", "quantity": 4, "unit_cost_usd": 3, "total_cost_usd": 12, "supplier": "T-Motor"},
+    {"id": "esc-001", "name": "Medical-grade ESC", "category": "Propulsion", "specification": "60A, quiet switching, IEC certified", "quantity": 4, "unit_cost_usd": 5, "total_cost_usd": 20, "supplier": "PHI Systems"},
+    {"id": "battery-001", "name": "FPB-5 Battery Pack", "category": "Power", "specification": "5kWh, 25.6V, inductive charging", "quantity": 1, "unit_cost_usd": 50, "total_cost_usd": 50, "supplier": "PHI Energy"},
+    {"id": "fc-001", "name": "Pixhawk Mini Flight Controller", "category": "Avionics", "specification": "Compact, medical-rated", "quantity": 1, "unit_cost_usd": 15, "total_cost_usd": 15, "supplier": "Holybro"},
+    {"id": "fc-002", "name": "Arm Controller (STM32H7)", "category": "Avionics", "specification": "6-axis arm control, force feedback", "quantity": 1, "unit_cost_usd": 10, "total_cost_usd": 10, "supplier": "STMicro"},
+    {"id": "arm-001", "name": "6-DOF Robotic Arm", "category": "Medical", "specification": "0.5m reach, 5kg payload, 0.1mm accuracy", "quantity": 1, "unit_cost_usd": 100, "total_cost_usd": 100, "supplier": "PHI Medical Robotics"},
+    {"id": "gripper-001", "name": "Quick-change Instrument Gripper", "category": "Medical", "specification": "6-slot auto-swap, <2s change time", "quantity": 1, "unit_cost_usd": 30, "total_cost_usd": 30, "supplier": "PHI Medical Robotics"},
+    {"id": "force-001", "name": "Force/Torque Sensor", "category": "Medical", "specification": "6-axis, 0.1N resolution", "quantity": 1, "unit_cost_usd": 15, "total_cost_usd": 15, "supplier": "ATI Industrial"},
+    {"id": "uvc-001", "name": "UV-C Sterilization Array", "category": "Sterile", "specification": "254nm, 40mW/cm2, 360-degree", "quantity": 1, "unit_cost_usd": 20, "total_cost_usd": 20, "supplier": "PHI Medical"},
+    {"id": "ionizer-001", "name": "Ionization System", "category": "Sterile", "specification": "Positive ion field, 10^6 ions/cm3", "quantity": 1, "unit_cost_usd": 15, "total_cost_usd": 15, "supplier": "PHI Medical"},
+    {"id": "cam-001", "name": "Stereo Camera Module", "category": "Sensors", "specification": "1080p stereo, 100fps, medical-rated", "quantity": 1, "unit_cost_usd": 20, "total_cost_usd": 20, "supplier": "FLIR/Intel"},
+    {"id": "em-001", "name": "Electromagnetic Tracker", "category": "Sensors", "specification": "6-DOF, 0.1mm accuracy", "quantity": 1, "unit_cost_usd": 15, "total_cost_usd": 15, "supplier": "NDI Medical"},
+    {"id": "phi-001", "name": "Phi-Harmonic Emitter Array", "category": "Healing", "specification": "4x Helmholtz coils, 16.18Hz", "quantity": 1, "unit_cost_usd": 30, "total_cost_usd": 30, "supplier": "PHI Research Labs"},
+    {"id": "safety-001", "name": "Safety Processor (STM32F4)", "category": "Safety", "specification": "Independent, emergency dock", "quantity": 1, "unit_cost_usd": 5, "total_cost_usd": 5, "supplier": "STMicro"},
+    {"id": "brake-001", "name": "Mechanical Arm Brake", "category": "Safety", "specification": "Electromagnetic, fail-safe engage", "quantity": 1, "unit_cost_usd": 8, "total_cost_usd": 8, "supplier": "PHI Systems"},
+    {"id": "wiring-001", "name": "Medical-grade Wiring Harness", "category": "Electrical", "specification": "IEC 60601-1 compliant, shielded", "quantity": 1, "unit_cost_usd": 10, "total_cost_usd": 10, "supplier": "PHI Systems"},
+    {"id": "mount-001", "name": "Ceiling Dock Mount System", "category": "Installation", "specification": "Magnetic docking + inductive power", "quantity": 1, "unit_cost_usd": 25, "total_cost_usd": 25, "supplier": "PHI Medical"}
+  ],
+  "total_breakdown": {
+    "structure_usd": 45,
+    "propulsion_usd": 80,
+    "power_usd": 50,
+    "avionics_usd": 25,
+    "medical_usd": 145,
+    "sterile_usd": 35,
+    "sensors_usd": 35,
+    "healing_usd": 30,
+    "safety_usd": 13,
+    "electrical_usd": 10,
+    "installation_usd": 25,
+    "assembly_usd": 30,
+    "total_usd": 523
+  }
+}
